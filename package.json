@@ -13,10 +13,19 @@
       {
         "provider": "github",
         "owner": "js-art",
-        "repo": "auto-update-electron"
+        "repo": "auto-update-electron",
+        "private":false
       }
-    ]
+    ],
+    "win":{
+      "target":"nsis"
+    },
+    "nsis":{
+      "deleteAppDataOnUninstall":true,
+      "oneClick":false
+    }
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

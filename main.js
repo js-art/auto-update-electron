@@ -2,7 +2,8 @@ const {app,BrowserWindow}=require('electron')
 const path=require('path')
 const {autoUpdater}=require('electron-updater')
 const log=require('electron-log')
-log.transports.file.resolvePathFn = () => path.join("/Users/mostafanaderi/Desktop/list/Udemy - Electron JS Complete Guide With Projects 2022-9/3. Auto Update Electron Application/auto-update-electron/package.json", 'logs/main.log');
+
+log.transports.file.resolvePathFn = () => path.join("C:/Users/Mostafa/Desktop/m/logs", 'logs/main.log');
 log.log("Application version= "+app.getVersion())
 let win;
 function createWindow(){
