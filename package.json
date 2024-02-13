@@ -1,6 +1,6 @@
 {
   "name": "auto-update-electron",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -16,13 +16,23 @@
         "repo": "auto-update-electron",
         "private":false
       }
-    ],
-    "win":{
-      "target":"nsis"
-    },
-    "nsis":{
-      "deleteAppDataOnUninstall":true,
-      "oneClick":false
+    ],  
+    "productName": "updaterrrrr",
+    "appId": "com.updarrr.app",
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true,
+      "displayLanguageSelector": false,
+      "unicode": true,
+      "shortcutName": "Vocab Tools",
+      "warningsAsErrors": true,
+      "runAfterFinish": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "menuCategory": false
     }
   },
   
